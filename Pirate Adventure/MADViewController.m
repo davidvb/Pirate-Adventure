@@ -7,6 +7,7 @@
 //
 
 #import "MADViewController.h"
+#import "MADFactory.h"
 
 @interface MADViewController ()
 
@@ -17,11 +18,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    MADFactory *array = [[MADFactory alloc]init];
+    [array tiles];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)actionButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)northButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)eastButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)southButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)westButtonPressed:(UIButton *)sender {
 }
 
 @end
