@@ -66,6 +66,7 @@
     
     MADTile *tileModel = [[self.tiles objectAtIndex:self.currentPoint.x] objectAtIndex:self.currentPoint.y];
     self.storyLabel.text = tileModel.story;
+    self.backgroundImageView.image = tileModel.background;
     [self updateButtons];
     
 }
